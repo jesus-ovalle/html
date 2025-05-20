@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Inventario - Restaurante</title>
+
+  <!-- TIPOGRAFÍA moderna desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ESTILOS CSS internos -->
+  <style>
+    /* Estilo general del cuerpo de la página */
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background-color: #fefcf7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Encabezado principal de la página */
+    header {
+      background-color: #4682b4;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 5px solid #315f7c;
+    }
+
+    /* Título principal del encabezado */
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Contenedor general del contenido */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    /* Subtítulos de sección */
+    h2 {
+      color: #2e4d66;
+      border-left: 6px solid #cce0f5;
+      padding-left: 10px;
+    }
+
+    /* Estilo para la tabla de inventario */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    /* Celdas de la tabla */
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    /* Encabezado de tabla */
+    th {
+      background-color: #d8ecff;
+      color: #1d3b52;
+    }
+
+    /* Alternancia de color en filas */
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Sección del formulario para agregar productos */
+    .form-section {
+      margin-top: 40px;
+      background-color: #ffffff;
+      padding: 25px;
+      border: 2px solid #d0e6f7;
+      border-radius: 10px;
+    }
+
+    /* Etiquetas de los campos del formulario */
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #2a4b6e;
+    }
+
+    /* Campos de entrada y selección */
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+      border: 1.5px solid #bbb;
+      border-radius: 6px;
+    }
+
+    /* Botón de envío del formulario */
+    button {
+      margin-top: 20px;
+      background-color: #4682b4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Efecto hover en botón */
+    button:hover {
+      background-color: #3a6a92;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO DEL SITIO -->
+  <header>
+    <h1>Gestión de Inventario</h1>
+    <p>Controla tus ingredientes y productos fácilmente</p>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL DEL CONTENIDO -->
+  <div class="container">
+
+    <!-- SECCIÓN DE TABLA DE INVENTARIO -->
+    <section>
+      <h2>Inventario Actual</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Unidad</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- FILAS DE EJEMPLO -->
+          <tr>
+            <td>Tomates</td>
+            <td>12</td>
+            <td>kg</td>
+            <td>Disponible</td>
+          </tr>
+          <tr>
+            <td>Queso Mozzarella</td>
+            <td>4</td>
+            <td>kg</td>
+            <td>Bajo stock</td>
+          </tr>
+          <tr>
+            <td>Botellas de vino</td>
+            <td>20</td>
+            <td>unidades</td>
+            <td>Disponible</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORMULARIO PARA AGREGAR NUEVOS PRODUCTOS AL INVENTARIO -->
+    <section class="form-section">
+      <h2>Agregar nuevo producto</h2>
+      <form action="#" method="post">
+        <!-- Campo: Nombre del producto -->
+        <label for="producto">Nombre del producto:</label>
+        <input type="text" id="producto" name="producto" required>
+
+        <!-- Campo: Cantidad -->
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+
+        <!-- Campo: Unidad de medida -->
+        <label for="unidad">Unidad de medida:</label>
+        <select id="unidad" name="unidad">
+          <option value="kg">Kilogramos</option>
+          <option value="unidades">Unidades</option>
+          <option value="litros">Litros</option>
+        </select>
+
+        <!-- Campo: Estado -->
+        <label for="estado">Estado del producto:</label>
+        <select id="estado" name="estado">
+          <option value="disponible">Disponible</option>
+          <option value="bajo">Bajo stock</option>
+          <option value="agotado">Agotado</option>
+        </select>
+
+        <!-- Botón de envío -->
+        <button type="submit">Agregar al inventario</button>
+        <p>&nbsp;</p>
+      </form>
+      <p><a href="inicio.html">inicio</a></p>
+    </section>
+
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    © 2025 Restaurante Foosha's· Gestión de Inventario
+  </footer>
+
+</body>
+</html>

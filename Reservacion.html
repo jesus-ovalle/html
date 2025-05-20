@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Reservación - Restaurante</title>
+
+  <!-- TIPOGRAFÍA desde Google Fonts (solo una: Lato) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ESTILOS INTERNOS -->
+  <style>
+    /* Estilo general del cuerpo */
+    body {
+      background-color: #f9f3ec; /* Color crema de fondo */
+      margin: 0;
+      padding: 20px;
+      font-family: 'Lato', sans-serif; /* Fuente principal */
+    }
+
+    /* Contenedor del formulario centrado */
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      border: 4px solid #d48d3a; /* Borde anaranjado */
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    }
+
+    /* Título principal del formulario */
+    h1 {
+      text-align: center;
+      color: #bf5f00;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    /* Texto introductorio */
+    p {
+      text-align: center;
+      font-size: 17px;
+      color: #333;
+    }
+
+    /* Etiquetas de los campos */
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #4d2c00;
+    }
+
+    /* Campos de entrada: input, select y textarea */
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1.5px solid #d4a76a;
+      font-size: 15px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* Botón de envío */
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #bf5f00;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Efecto hover del botón */
+    button:hover {
+      background-color: #a24d00;
+    }
+
+    /* Pie de página del formulario */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CONTENEDOR PRINCIPAL DEL FORMULARIO -->
+<div class="form-container">
+    <!-- TÍTULO -->
+    <h1>Reservación</h1>
+
+    <!-- INTRODUCCIÓN -->
+    <p>Llena este formulario para reservar tu mesa. ¡Te esperamos!</p>
+
+    <!-- FORMULARIO QUE ENVÍA DATOS A GMAIL CON FORMSUBMIT -->
+    <form action="https://formsubmit.co/22060327@cobachih.edu.mx" method="POST">
+      <!-- Opcional: desactiva el captcha de FormSubmit --><!-- Opcional: asunto del correo recibido --><!-- CAMPO: NOMBRE -->
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <!-- CAMPO: CORREO ELECTRÓNICO -->
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <!-- CAMPO: TELÉFONO -->
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <!-- CAMPO: FECHA -->
+      <label for="fecha">Fecha de la reservación:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <!-- CAMPO: HORA -->
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <!-- CAMPO: NÚMERO DE PERSONAS -->
+      <label for="personas">Número de personas:</label>
+      <select id="personas" name="personas">
+        <option value="1">1 persona</option>
+        <option value="2">2 personas</option>
+        <option value="3">3 personas</option>
+        <option value="4">4 personas</option>
+        <option value="5+">Más de 4</option>
+      </select>
+
+      <!-- CAMPO: COMENTARIOS -->
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <!-- BOTÓN DE ENVÍO -->
+      <button type="submit">Enviar reservación    </button>
+      <p>&nbsp;</p>
+    </form>
+
+    <!-- PIE DE PÁGINA -->
+    <div class="footer">
+      <p>© 2025 Restaurante Foosha's- Formulario de Reservas.    </p>
+  </div>
+  <p><a href="inicio.html">inicio</a></p>
+</div>
+
+</body>
+</html>

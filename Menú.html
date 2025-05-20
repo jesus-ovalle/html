@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> <!-- Codificación de caracteres para admitir tildes y caracteres especiales -->
+  <title>Menú - Foosha's</title> <!-- Título de la pestaña del navegador -->
+  <style>
+    /* Estilos para todo el cuerpo del documento */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Título centrado */
+    h1 {
+      text-align: center;
+    }
+
+    /* Estilos de la tabla del menú */
+    table {
+      margin: 0 auto; /* Centra la tabla horizontalmente */
+      border-collapse: collapse; /* Elimina el espacio entre bordes */
+      width: 80%; /* Ancho de la tabla */
+    }
+
+    /* Estilo para celdas de la tabla */
+    th, td {
+      padding: 10px;
+      text-align: left; /* Alineación a la izquierda */
+    }
+
+    /* Encabezados de la tabla */
+    th {
+      background-color: #333; /* Fondo oscuro */
+      color: #e1f6ff; /* Texto claro */
+    }
+
+    /* Filas pares con fondo alterno */
+    tr:nth-child(even) {
+      background-color: #edf5ff;
+    }
+
+    /* Efecto hover al pasar el cursor sobre una fila */
+    tr:hover {
+      background-color: #d7ecff;
+    }
+
+    /* Estilos de la barra de navegación dentro del footer */
+    nav {
+      background-color: #95b9d1;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #e9f0f1;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Título principal de la página -->
+  <h1>Menú - Foosha's</h1>
+  <p>&nbsp;</p> <!-- Espacio vacío -->
+
+  <!-- Tabla con los platillos, bebidas, etc. -->
+  <table>
+    <!-- Sección de Bebidas -->
+    <tr>
+      <th>Bebida</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>Vino tinto reserva</td>
+      <td>150ml</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>Coctel de la casa</td>
+      <td>1 unidad</td>
+      <td>$140</td>
+    </tr>
+    <tr>
+      <td>Cerveza artesanal</td>
+      <td>330ml</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <td>Mojito de fresas</td>
+      <td>1 unidad</td>
+      <td>$70</td>
+    </tr>
+    <tr>
+      <td>Limonada de hierbabuena</td>
+      <td>250ml</td>
+      <td>$60</td>
+    </tr>
+
+    <!-- Sección de Ensaladas (aunque hay un risotto incluido, deberías moverlo a otra categoría si no es ensalada) -->
+    <tr>
+      <th>Ensalada</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>Risotto de hongos silvestres con parmesano y aceite de trufa</td>
+      <td>250g</td>
+      <td>$200</td>
+    </tr>
+    <tr>
+      <td>Ensalada de rúcula con peras caramelizadas, nueces y queso azul</td>
+      <td>560g</td>
+      <td>$240</td>
+    </tr>
+    <tr>
+      <td>Ensalada caprese con tomates heirloom, mozzarella de búfala y albahaca</td>
+      <td>420g</td>
+      <td>$190</td>
+    </tr>
+
+    <!-- Sección de Alimentos -->
+    <tr>
+      <th>Alimento</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>Carpaccio de res con aceite de trufa y parmesano</td>
+      <td>100g</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Salmón ahumado con eneldo y blinis</td>
+      <td>4 unidades</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>Terrina de foie gras con compota de higos</td>
+      <td>50g</td>
+      <td>$180</td>
+    </tr>
+    <tr>
+      <td>Filete de ternera con reducción de vino tinto y puré de patatas trufado</td>
+      <td>200g</td>
+      <td>$280</td>
+    </tr>
+    <tr>
+      <td>Salmón a la parrilla con salsa de mantequilla de limón y espárragos</td>
+      <td>180g</td>
+      <td>$240</td>
+    </tr>
+
+    <!-- Sección de Postres -->
+    <tr>
+      <th>Postre</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>Tarta de chocolate negro con salsa de frambuesa</td>
+      <td>1200g</td>
+      <td>$1250</td> <!-- Este peso es inusualmente alto para un postre, ¿quizá 120g? -->
+    </tr>
+    <tr>
+      <td>Crème brûlée de vainilla bourbon</td>
+      <td>220g</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <td>Selección de quesos artesanales con membrillo y pan casero</td>
+      <td>300g</td>
+      <td>$170</td>
+    </tr>
+  </table>
+
+  <!-- Pie de página con navegación de vuelta al inicio -->
+  <footer>
+    <!-- Navegación dentro del footer -->
+    <nav>
+      <!-- Enlace al inicio del sitio -->
+      <a href="inicio.html">inicio</a>
+      <ul>
+        <li></li> <!-- Elementos vacíos que pueden eliminarse -->
+        <li></li>
+      </ul>
+    </nav>
+    <!-- Información de derechos -->
+    © 2025 Restaurante Foosha's · Seguridad e Higiene
+  </footer>
+</body>
+</html>

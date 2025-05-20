@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Opiniones de Clientes - Restaurante</title>
+
+  <!-- TIPOGRAFÍA DESDE GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ESTILOS PERSONALIZADOS -->
+  <style>
+    /* Estilo general de la página */
+    body {
+      font-family: 'Signika', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Encabezado principal */
+    header {
+      background-color: #ff6f3c;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 5px solid #cc5124;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Contenedor general */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Título de sección */
+    h2 {
+      color: #d35400;
+      border-left: 6px solid #ffbb85;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Opiniones individuales con marco */
+    .review {
+      background-color: #fff;
+      border-left: 6px solid #ffa07a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .review strong {
+      color: #b34700;
+    }
+
+    /* Sección del formulario */
+    .form-section {
+      background-color: #fff;
+      padding: 25px;
+      border: 2px solid #ffe0c7;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.03);
+      margin-top: 40px;
+    }
+
+    /* Etiquetas de formulario */
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* Campos de entrada */
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* Botón de enviar */
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #ff6f3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e85a26;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Opiniones de Nuestros Clientes</h1>
+    <p style="font-size: 18px;">¡Gracias por compartir tu experiencia con nosotros!</p>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+
+    <!-- SECCIÓN DE OPINIONES -->
+    <section>
+      <h2>Comentarios recientes</h2>
+
+      <!-- Opinión 1 -->
+      <div class="review">
+        <strong>María Sánchez:</strong> “Excelente servicio y atención. La comida estaba deliciosa y bien presentada.”
+      </div>
+
+      <!-- Opinión 2 -->
+      <div class="review">
+        <strong>Pedro Rodríguez:</strong> “Muy buen ambiente, ideal para cenas en familia. ¡Recomendado!”
+      </div>
+
+      <!-- Opinión 3 -->
+      <div class="review">
+        <strong>Ana Ramírez:</strong> “Me encantó la limpieza del lugar y lo rápido que sirven los platillos.”
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE NUEVA OPINIÓN -->
+    <section class="form-section">
+      <h2>Deja tu Opinión</h2>
+      <form action="#" method="post">
+        
+        <!-- Campo: Nombre -->
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Campo: Comentario -->
+        <label for="comentario">Tu comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar opinión</button>
+      </form>
+    </section>
+
+    <p><a href="inicio.html">inicio</a></p>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    © 2025 Restaurante Foosha's· Opiniones de Clientes
+  </footer>
+
+</body>
+</html>

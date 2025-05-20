@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!-- Define que el documento es HTML5 -->
+<html>
+<head>
+  <meta charset="utf-8"> <!-- Establece codificación UTF-8 -->
+  <title>Contacto - Foosha's</title> <!-- Título que aparece en la pestaña del navegador -->
+  <style>
+    /* Estilos generales de la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      background-color: #7fadb6;
+      color: #fce3fa;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Contenedor principal de la sección de contacto */
+    .contact-info {
+      display: flex; /* Alinea los elementos en fila */
+      justify-content: space-between; /* Espacio entre columnas */
+      margin-bottom: 20px;
+    }
+    
+    .contact-info div {
+      width: 48%; /* Cada columna toma casi la mitad del ancho */
+    }
+    
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para el buzón de comentarios */
+    .complaints-comments {
+      margin-top: 20px;
+    }
+    
+    .complaints-comments textarea {
+      width: 100%;
+      height: 150px;
+    }
+
+    /* Estilos para el menú de navegación */
+    nav {
+      background-color: #ffc4f2;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    /* Estilo para el pie de página */
+    footer {
+      background-color: #e9f0f1;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Título principal de la página -->
+  <h1>Contacto - Foosha's</h1>
+  
+  <!-- Sección de redes sociales y mapa de ubicación -->
+  <div class="contact-info">
+    <div>
+      <h2>Redes Sociales</h2>
+      <ul>
+        <!-- Enlaces a redes sociales con target="_blank" para abrir en nueva pestaña -->
+        <li><a href="https://www.facebook.com/EpicureanDelights" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/EpicureanDelights" target="_blank">Instagram</a></li>
+        <li><a href="https://www.twitter.com/EpicureanDelights" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Ubicación</h2>
+      <!-- Mapa embebido de Google Maps con la ubicación del COBACH 6 -->
+      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    </div>
+  </div>
+  
+  <!-- Sección de teléfonos y correo -->
+  <div class="contact-info">
+    <div>
+      <h2>Teléfonos de Contacto</h2>
+      <ul>
+        <li>+52 656 456 7890</li>
+        <li>+52 656 654 3210</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Correo de Contacto</h2>
+      <p>contacto@Foosha's.com</p>
+    </div>
+  </div>
+  
+  <!-- Formulario de quejas y comentarios -->
+  <div class="complaints-comments">
+    <h2>Buzón de Quejas y Comentarios</h2>
+    <p>Tus opiniones son importantes para nosotros. Por favor, déjanos tus comentarios o quejas en el siguiente formulario:</p>
+    <form>
+      <p>
+        <!-- Campo de texto para escribir quejas o comentarios -->
+        <textarea name="complaints-comments" placeholder="Escribe aquí tus comentarios o quejas"></textarea>
+      </p>
+      <p><br></p> <!-- Espaciado (innecesario, se puede quitar) -->
+      <button type="submit">Enviar</button> <!-- Botón para enviar -->
+    </form>
+  </div>
+
+  <!-- Enlace de regreso a la página de inicio -->
+  <p><a href="inicio.html">inicio</a></p>
+</body>
+
+<!-- Pie de página -->
+<footer>
+  <p>Todos los derechos reservados &copy; 2023 Restaurante</p>
+</footer>
+</html>
